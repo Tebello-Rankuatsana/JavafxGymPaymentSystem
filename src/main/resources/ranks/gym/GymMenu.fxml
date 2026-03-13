@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="502.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ranks.gym.GymMenu">
+   <children>
+      <TextField fx:id="txtName" layoutX="300.0" layoutY="41.0" onAction="#checkField" prefHeight="52.0" prefWidth="275.0" promptText="Memeber name" />
+      <TextField fx:id="txtID" layoutX="300.0" layoutY="116.0" onAction="#checkField" prefHeight="52.0" prefWidth="275.0" promptText="Member ID" />
+      <TextField fx:id="txtFee" layoutX="300.0" layoutY="200.0" onAction="#checkField" prefHeight="52.0" prefWidth="275.0" promptText="Monthly Fee" />
+      <Label fx:id="lblName" layoutX="95.0" layoutY="58.0" text="Member Name" />
+      <Label fx:id="lblID" layoutX="95.0" layoutY="133.0" text="Member ID" />
+      <Label fx:id="lblFee" layoutX="95.0" layoutY="217.0" text="Monthly Fee" />
+      <TextField fx:id="txtMonths" layoutX="300.0" layoutY="284.0" onAction="#checkField" prefHeight="52.0" prefWidth="275.0" promptText="Months" />
+      <Label fx:id="lblFee1" layoutX="95.0" layoutY="301.0" text="Months" />
+      <Button fx:id="btnProcess" layoutX="250.0" layoutY="387.0" mnemonicParsing="false" onAction="#calcPayment" prefHeight="36.0" prefWidth="80.0" text="Process" />
+   </children>
+</AnchorPane>
